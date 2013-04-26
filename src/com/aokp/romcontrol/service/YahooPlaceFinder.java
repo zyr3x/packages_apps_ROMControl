@@ -1,4 +1,3 @@
-
 package com.aokp.romcontrol.service;
 
 import android.content.Context;
@@ -8,7 +7,7 @@ import com.aokp.romcontrol.xml.WeatherXmlParser;
 public class YahooPlaceFinder {
 
     private static final String YAHOO_API_BASE_REV_URL = "http://where.yahooapis.com/geocode?appid=jYkTZp64&q=%1$s,+%2$s&gflags=R";
-    private static final String YAHOO_API_BASE_URL = "http://where.yahooapis.com/geocode?appid=jYkTZp64&q=%1$s";
+    private static final String YAHOO_API_BASE_URL = "http://query.yahooapis.com/v1/public/yql?q=select * from geo.places where text='%1$s'&format=xml";
 
     public static String reverseGeoCode(Context c, double latitude, double longitude) {
 
