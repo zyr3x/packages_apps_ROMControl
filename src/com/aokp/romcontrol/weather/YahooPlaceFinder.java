@@ -1,4 +1,3 @@
-
 package com.aokp.romcontrol.weather;
 
 import android.content.Context;
@@ -18,9 +17,10 @@ public class YahooPlaceFinder {
     }
 
     public static String GeoCode(Context c, String location) {
-        String url = String.format(YAHOO_API_BASE_URL, location).replace(' ', '+');
-        String response = new HttpRetriever().retrieve(url);
-        return new WeatherXmlParser(c).parsePlaceFinderResponse(response);
+        //String url = String.format(YAHOO_API_BASE_URL, location).replace(' ', '+');
+        //  String response = new HttpRetriever().retrieve(url);
+        //  return new WeatherXmlParser(c).parsePlaceFinderResponse(response);
+        return location;
     }
 
 }
